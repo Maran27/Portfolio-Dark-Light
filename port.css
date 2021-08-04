@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body{
+    transition: 0.3s;
+    margin: 0;
+    padding: 0%;
+    background-color: rgb(241, 239, 239);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 49px 0 10px 0;
+}
+
+p{
+    margin: 0%;
+    font-size: 20px;
+}
+
+a{
+    color: rgb(162, 2, 255);
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.dark a{
+    color: rgb(148, 255, 219);
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.dl{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+
+}
+
+.onoff{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.5s;
+    box-shadow: inset 4px 4px 4px rgb(255, 255, 255), inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark{
+    background-color: rgb(58, 58, 58);
+    transition: 0.3s;
+}
+
+.d{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .onoff{
+    transform: translate(40px);
+}
+
+.dark > *{
+    color: white;
+}
+
+.first{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.text{
+    padding: 30px;
+    margin-bottom: 100px;
+}
+
+.box{
+    width: 97%;
+    margin: 2%;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.dark .box{
+    background-color: rgb(71, 72, 71);
+}
+
+#asd{
+    background-image: url('images/portfolio-5.png');
+    background-size: contain;
+}
+
+#nlp{
+    background-image: url('images/portfolio-4.png');
+    background-size: contain;
+}
+
+#web{
+    background-image: url('images/portfolio-3.png');
+    background-size: contain;
+}
+
+#port{
+    background-image: url('images/portfolio-7.png');
+    background-size: contain
+}
+
+.mid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.himg{
+    position: relative;
+    width: 50%;
+    height: 350px;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.cube{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    /* background-color: pink; */
+    transform: rotate(-25deg) skew(25deg);
+}
+
+.cube::before{
+    position: absolute;
+    content: ' ';
+    width: 21px;
+    height: 100%;
+    /* background-color: plum; */
+    transform: skewY(-45deg);
+    left: -20px;
+    bottom: -10px;
+}
+
+.cube::after{
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 21px;
+    /* background-color: palevioletred; */
+    transform: skewX(-45deg);
+    left: -10px;
+    bottom: -20px;
+}
+
+#hcj{
+    left: 100px;
+    bottom: 80px;
+    background-image: url("images/pixlr-bg-result.png");
+    background-size: contain;
+    background-color: rgb(250, 250, 210);
+    box-shadow: -60px 60px 20px rgb(50 50 50 / 15%);
+}
+
+#hcj::before{
+    background-color: rgb(255, 255, 218)
+}
+
+#hcj::after{
+    background-color: rgb(255, 255, 224);
+}
+
+#php{
+    left: 250px;
+    bottom: 240px;
+    background-image: url("images/pixlr-bg-result (2).png");
+    background-size: contain;
+    background-color: rgb(202, 94, 202);
+    box-shadow: -100px 100px 20px rgb(50 50 50 / 15%);
+}
+
+#php::before{
+    background-color: rgb(217, 98, 218)
+}
+
+#php::after{
+    background-color: rgb(229, 98, 229);
+}
+
+#nalp{
+    left: 450px;
+    bottom: 240px;
+    background-image: url("images/pixlr-bg-result (1).png");
+    background-size: contain;
+    background-color: rgb(89, 211, 150);
+    box-shadow: -40px 40px 20px rgb(50 50 50 / 15%);
+}
+
+#nalp::before{
+    background-color: rgb(113, 214, 164)
+}
+
+#nalp::after{
+    background-color: rgb(124, 226, 194);
+}
+
+#ml{
+    left: 350px;
+    bottom: 40px;
+    background-image: url("images/pixlr-bg-result (4).png");
+    background-size: contain;
+    background-color: rgb(253, 93, 128);
+    box-shadow: -80px 80px 20px rgb(50 50 50 / 15%);
+}
+
+#ml::before{
+    background-color: rgb(255, 100, 139)
+}
+
+#ml::after{
+    background-color: rgb(255, 100, 150);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
+    background-color: rgb(136, 136, 136);
+}
+
+.dark footer{
+    background-color: rgb(62, 62, 62);
+}
+
+@media only screen and (min-width: 970px) {
+    .text{
+        width: 50%;
+    }
+
+    .box{
+        width: 48%;
+        margin: 1%;
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+    .himg{
+        display: none;
+    }
+}
